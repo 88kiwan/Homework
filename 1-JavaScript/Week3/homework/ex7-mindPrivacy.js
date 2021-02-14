@@ -26,8 +26,17 @@ const employeeRecords = [
   },
 ];
 
-function filterPrivateData(/* parameter(s) go here */) {
+function filterPrivateData(arr) {
   // TODO complete this function
+  const publicArr = [];
+
+  arr.forEach(({ name, occupation, email }) => {
+    const publicObj = { name, occupation, email };
+
+    publicArr.push(publicObj);
+  });
+
+  return publicArr;
 }
 
 console.log(filterPrivateData(employeeRecords));

@@ -21,10 +21,18 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this object
+  peanuts: 2.49,
+  popcorn: 1.99,
+  chips: 1.75,
+  water: 0.99,
+  cola: 1.5,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(obj) {
   // TODO replace this comment with your code
+  const total = Object.values(obj).reduce((acc, val) => acc + val);
+
+  return `Total: €${total}`;
 }
 
 // this is one example, you will need to write a different object
