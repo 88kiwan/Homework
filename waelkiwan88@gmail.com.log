@@ -1,0 +1,43 @@
+2021-02-14 06:44:02 info: ----------------------------------------------
+2021-02-14 06:44:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-14 06:44:02 info: ----------------------------------------------
+2021-02-14 06:44:04 info: All unit tests passed.
+2021-02-14 06:44:05 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:49:19 - Unknown word (Wael)
+2021-02-14 06:44:34 info: Disclaimer turned off
+2021-02-14 06:44:39 info: ----------------------------------------------
+2021-02-14 06:44:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-14 06:44:39 info: ----------------------------------------------
+2021-02-14 06:44:40 info: All unit tests passed.
+2021-02-14 06:44:42 info: All steps were completed successfully
+2021-02-14 06:48:50 info: ----------------------------------------
+2021-02-14 06:48:50 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-02-14 06:48:50 info: ----------------------------------------
+2021-02-14 06:48:52 info: All unit tests passed.
+2021-02-14 06:48:53 info: All steps were completed successfully
+2021-02-14 06:51:21 info: -------------------------------------------
+2021-02-14 06:51:21 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-14 06:51:21 info: -------------------------------------------
+2021-02-14 06:51:22 info: All unit tests passed.
+2021-02-14 06:51:23 info: All steps were completed successfully
+2021-02-14 06:52:58 info: --------------------------------------------
+2021-02-14 06:52:58 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-14 06:52:58 info: --------------------------------------------
+2021-02-14 06:52:59 info: All unit tests passed.
+2021-02-14 06:53:01 info: All steps were completed successfully
+2021-02-14 06:54:23 info: -------------------------------------------------
+2021-02-14 06:54:23 info: >>> Running Unit Test `ex5-shoppingCartRedux` <<<
+2021-02-14 06:54:23 info: -------------------------------------------------
+2021-02-14 06:54:25 info: All unit tests passed.
+2021-02-14 06:54:26 info: All steps were completed successfully
+2021-02-14 06:55:35 info: -----------------------------------------
+2021-02-14 06:55:35 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-14 06:55:35 info: -----------------------------------------
+2021-02-14 06:55:37 info: All unit tests passed.
+2021-02-14 06:55:38 info: All steps were completed successfully
+2021-02-14 06:56:36 info: -------------------------------------------
+2021-02-14 06:56:36 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-02-14 06:56:36 info: -------------------------------------------
+2021-02-14 06:56:38 info: All unit tests passed.
+2021-02-14 06:56:39 info: All steps were completed successfully
