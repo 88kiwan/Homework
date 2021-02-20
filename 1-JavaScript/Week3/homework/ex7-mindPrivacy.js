@@ -27,7 +27,6 @@ const employeeRecords = [
 ];
 
 function filterPrivateData(arr) {
-  // TODO complete this function
   const publicArr = [];
 
   arr.forEach(({ name, occupation, email }) => {

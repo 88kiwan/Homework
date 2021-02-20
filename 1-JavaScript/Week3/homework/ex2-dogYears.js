@@ -15,7 +15,6 @@ calculate it!
 -----------------------------------------------------------------------------*/
 
 function calculateDogAge(humanYears) {
-  // TODO complete this function
   const conversionRate = 7;
   const dogYears = humanYears * conversionRate;
 

@@ -20,7 +20,6 @@ instead!
    Use `console.log` to display the result.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
   peanuts: 2.49,
   popcorn: 1.99,
   chips: 1.75,
@@ -29,7 +28,6 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(obj) {
-  // TODO replace this comment with your code
   const total = Object.values(obj).reduce((acc, val) => acc + val);
 
   return `Total: €${total}`;

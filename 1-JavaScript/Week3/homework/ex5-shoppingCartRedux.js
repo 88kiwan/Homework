@@ -13,14 +13,11 @@ it pure. Do the following:
    spread syntax.
 ------------------------------------------------------------------------------*/
 function addToShoppingCart(arr, item) {
-  // TODO complete this function
   const cart = [...arr];
+  cart.push(item);
 
-  if (arr.length <= 2) {
-    cart.push(item);
-  } else {
+  if (arr.length > 2) {
     cart.shift();
-    cart.push(item);
   }
 
   return cart;
