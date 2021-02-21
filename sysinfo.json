@@ -1,0 +1,351 @@
+{
+  "node": "v15.8.0",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookPro17,1"
+  },
+  "cpu": {
+    "manufacturer": "Apple",
+    "brand": "M1",
+    "speed": 2.4
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "macOS",
+    "release": "11.2.1"
+  },
+  "blockDevices": [
+    {
+      "name": "/dev/disk0",
+      "size": "251 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk0s1",
+      "size": "1 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk0s2",
+      "size": "245 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk0s3",
+      "size": "0 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk1",
+      "size": "1 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk1s1",
+      "size": "1 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk1s2",
+      "size": "1 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk1s3",
+      "size": "1 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk1s4",
+      "size": "1 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk2",
+      "size": "0 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk2s1",
+      "size": "0 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk2s2",
+      "size": "0 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3",
+      "size": "245 GB",
+      "fsType": "",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s1",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s2",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s3",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s3s1",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s4",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s5",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    },
+    {
+      "name": "/dev/disk3s6",
+      "size": "245 GB",
+      "fsType": "APFS",
+      "physical": "SSD"
+    }
+  ],
+  "vscodeInfo": {
+    "version": "1.53.2",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "christian-kohler.path-intellisense",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "ecmel.vscode-html-css",
+      "esbenp.prettier-vscode",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-complete-tag",
+      "formulahendry.auto-rename-tag",
+      "mikestead.dotenv",
+      "naumovs.color-highlight",
+      "oderwat.indent-rainbow",
+      "PKief.material-icon-theme",
+      "pranaygp.vscode-css-peek",
+      "ritwickdey.LiveServer",
+      "sdras.night-owl",
+      "streetsidesoftware.code-spell-checker",
+      "VisualStudioExptTeam.vscodeintellicode",
+      "vscodevim.vim",
+      "WallabyJs.quokka-vscode",
+      "wayou.vscode-todo-highlight",
+      "Zignd.html-css-class-completion"
+    ],
+    "userSettings": {
+      "editor.tabSize": 2,
+      "editor.fontSize": 20,
+      "editor.lineHeight": 24,
+      "editor.wordWrap": "on",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.formatOnPaste": true,
+      "editor.tabCompletion": "on",
+      "editor.fontLigatures": true,
+      "editor.linkedEditing": true,
+      "editor.smoothScrolling": true,
+      "editor.lineNumbers": "relative",
+      "editor.renderIndentGuides": true,
+      "editor.cursorBlinking": "expand",
+      "editor.suggestSelection": "first",
+      "editor.snippetSuggestions": "top",
+      "editor.renderWhitespace": "selection",
+      "editor.renderLineHighlight": "gutter",
+      "editor.renderControlCharacters": false,
+      "editor.fontFamily": "Operator Mono Lig",
+      "editor.cursorSmoothCaretAnimation": true,
+      "editor.scrollbar.verticalScrollbarSize": 0,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "workbench.tips.enabled": false,
+      "workbench.editor.wrapTabs": true,
+      "workbench.startupEditor": "none",
+      "workbench.settings.editor": "json",
+      "workbench.colorTheme": "Night Owl",
+      "workbench.settings.useSplitJSON": true,
+      "workbench.editor.closeEmptyGroups": false,
+      "workbench.panel.defaultLocation": "bottom",
+      "workbench.editor.decorations.badges": true,
+      "workbench.editor.decorations.colors": true,
+      "workbench.iconTheme": "material-icon-theme",
+      "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#0F111A",
+        "terminal.ansiBrightBlack": "#333333",
+        "terminal.ansiRed": "#FF5370",
+        "terminal.ansiBrightRed": "#FC768C",
+        "terminal.ansiGreen": "#69C65F",
+        "terminal.ansiBrightGreen": "#99C794",
+        "terminal.ansiYellow": "#D6E04E",
+        "terminal.ansiBrightYellow": "#D5D875",
+        "terminal.ansiBlue": "#5388FC",
+        "terminal.ansiBrightBlue": "#8FABFC",
+        "terminal.ansiMagenta": "#C67AF9",
+        "terminal.ansiBrightMagenta": "#C792EA",
+        "terminal.ansiCyan": "#64D1FC",
+        "terminal.ansiBrightCyan": "#89DDFF",
+        "terminal.ansiWhite": "#CCCCCC",
+        "terminal.ansiBrightWhite": "#F9F9F9"
+      },
+      "terminal.integrated.fontSize": 17,
+      "terminal.integrated.cursorWidth": 2,
+      "terminal.integrated.cursorStyle": "line",
+      "terminal.integrated.cursorBlinking": true,
+      "terminal.integrated.copyOnSelection": true,
+      "terminal.integrated.fontWeightBold": "normal",
+      "terminal.integrated.fontFamily": "MesloLGS NF",
+      "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.quickOpen",
+        "editor.action.toggleMinimap",
+        "workbench.action.closeWindow",
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.toggleStatusbarVisibility",
+        "workbench.action.toggleActivityBarVisibility"
+      ],
+      "liveServer.settings.NoBrowser": true,
+      "liveServer.settings.donotShowInfoMsg": true,
+      "explorer.confirmDelete": false,
+      "explorer.decorations.badges": false,
+      "telemetry.enableCrashReporter": false,
+      "telemetry.enableTelemetry": false,
+      "prettier.singleQuote": true,
+      "breadcrumbs.enabled": false,
+      "git.enableCommitSigning": true,
+      "files.autoSave": "onFocusChange",
+      "emmet.triggerExpansionOnTab": true,
+      "vim.hlsearch": true,
+      "vim.incsearch": true,
+      "vim.easymotion": true,
+      "vim.leader": "<space>",
+      "vim.useCtrlKeys": true,
+      "vim.smartRelativeLine": true,
+      "vim.useSystemClipboard": true,
+      "vim.easymotionDimColor": "#000000",
+      "vim.easymotionMarkerBackgroundColor": "#0F111A",
+      "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+      "vim.easymotionMarkerForegroundColorOneChar": "#64D1FC",
+      "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+      },
+      "vim.operatorPendingModeKeyBindings": [
+        {
+          "before": [
+            "j"
+          ],
+          "after": [
+            "+"
+          ]
+        },
+        {
+          "before": [
+            "k"
+          ],
+          "after": [
+            "-"
+          ]
+        }
+      ],
+      "vim.visualModeKeyBindings": [
+        {
+          "before": [
+            ">"
+          ],
+          "commands": [
+            "editor.action.indentLines"
+          ]
+        },
+        {
+          "before": [
+            "<"
+          ],
+          "commands": [
+            "editor.action.outdentLines"
+          ]
+        }
+      ],
+      "vim.visualModeKeyBindingsNonRecursive": [
+        {
+          "before": [
+            "p"
+          ],
+          "after": [
+            "p",
+            "g",
+            "v",
+            "y"
+          ]
+        }
+      ],
+      "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": [
+            "="
+          ],
+          "after": [
+            "+"
+          ]
+        },
+        {
+          "before": [
+            "<Cr>",
+            "<Cr>"
+          ],
+          "commands": [
+            ":nohl",
+            ":Backspace"
+          ]
+        },
+        {
+          "before": [
+            "f"
+          ],
+          "after": [
+            "leader",
+            "leader",
+            "2",
+            "s"
+          ]
+        }
+      ],
+      "editor.minimap.enabled": false,
+      "workbench.activityBar.visible": false,
+      "workbench.statusBar.visible": false
+    }
+  }
+}
