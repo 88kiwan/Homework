@@ -16,7 +16,7 @@ function addToShoppingCart(arr, item) {
   const cart = [...arr];
   cart.push(item);
 
-  if (arr.length > 2) {
+  if (arr.length > 3) {
     cart.shift();
   }
 
