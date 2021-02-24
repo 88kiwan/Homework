@@ -26,25 +26,26 @@ const imgElem = document.querySelector('img');
 function catWalk() {
   let currPosition = startPosition;
 
-  const start = setInterval(() => {
-    currPosition < pausePosition
-      ? (currPosition += 10)
-      : ((imgElem.src = newSrc),
-        clearInterval(start),
-        setTimeout(() => {
-          imgElem.src = origSrc;
-          imgElem.alt = 'Cat dancing';
+  const start = setInterval(
+    () => (
+      currPosition < pausePosition
+        ? (currPosition += 10)
+        : ((imgElem.src = newSrc),
+          clearInterval(start),
+          setTimeout(() => {
+            imgElem.src = origSrc;
+            imgElem.alt = 'Cat dancing';
 
-          const resume = setInterval(() => {
-            currPosition += 10;
-            imgElem.style.left = `${currPosition}px`;
-
-            currPosition > endPosition && (clearInterval(resume), catWalk());
-          }, 50);
-        }, 5000));
-
-    imgElem.style.left = `${currPosition}px`;
-  }, 50);
+            const resume = setInterval(() => {
+              currPosition += 10;
+              imgElem.style.left = `${currPosition}px`;
+              currPosition > endPosition && (clearInterval(resume), catWalk());
+            }, 50);
+          }, 5000)),
+      (imgElem.style.left = `${currPosition}px`)
+    ),
+    50
+  );
 }
 
 window.addEventListener('DOMContentLoaded', catWalk());
