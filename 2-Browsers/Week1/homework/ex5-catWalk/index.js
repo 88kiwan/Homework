@@ -41,10 +41,7 @@ function catWalk() {
           currPosition += 10;
           imgElem.style.left = `${currPosition}px`;
 
-          if (currPosition > endPosition) {
-            clearInterval(resume);
-            catWalk();
-          }
+          currPosition > endPosition && (clearInterval(resume), catWalk());
         }, 50);
       }, 5000);
     }
