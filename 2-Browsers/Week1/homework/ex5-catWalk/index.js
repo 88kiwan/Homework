@@ -15,39 +15,41 @@
    for 5 seconds, and then replace the img with the original image and have it 
    continue the walk.
 -----------------------------------------------------------------------------*/
+const startPosition = -200;
+const pausePosition = window.innerWidth / 2 - 200;
+const endPosition = window.innerWidth;
+const origSrc = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+const newSrc =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
 const imgElem = document.querySelector('img');
-imgElem.style.left = '0px';
 
 function catWalk() {
-  let position = 0;
+  let currPosition = startPosition;
 
-  // TODO: refactoring
   const start = setInterval(() => {
-    if (position < window.innerWidth / 2) {
-      position += 10;
+    if (currPosition < pausePosition) {
+      currPosition += 10;
     } else {
+      imgElem.src = newSrc;
       clearInterval(start);
-      imgElem.src =
-        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
 
       setTimeout(() => {
-        const resume = setInterval(() => {
-          position += 10;
-          imgElem.style.left = `${position}px`;
+        imgElem.src = origSrc;
+        imgElem.alt = 'Cat dancing';
 
-          if (position > window.innerWidth) {
+        const resume = setInterval(() => {
+          currPosition += 10;
+          imgElem.style.left = `${currPosition}px`;
+
+          if (currPosition > endPosition) {
             clearInterval(resume);
-            position = 0;
-            imgElem.style.left = `${position}px`;
             catWalk();
           }
         }, 50);
-
-        imgElem.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
       }, 5000);
     }
 
-    imgElem.style.left = `${position}px`;
+    imgElem.style.left = `${currPosition}px`;
   }, 50);
 }
 
