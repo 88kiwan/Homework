@@ -27,24 +27,21 @@ function catWalk() {
   let currPosition = startPosition;
 
   const start = setInterval(() => {
-    if (currPosition < pausePosition) {
-      currPosition += 10;
-    } else {
-      imgElem.src = newSrc;
-      clearInterval(start);
+    currPosition < pausePosition
+      ? (currPosition += 10)
+      : ((imgElem.src = newSrc),
+        clearInterval(start),
+        setTimeout(() => {
+          imgElem.src = origSrc;
+          imgElem.alt = 'Cat dancing';
 
-      setTimeout(() => {
-        imgElem.src = origSrc;
-        imgElem.alt = 'Cat dancing';
+          const resume = setInterval(() => {
+            currPosition += 10;
+            imgElem.style.left = `${currPosition}px`;
 
-        const resume = setInterval(() => {
-          currPosition += 10;
-          imgElem.style.left = `${currPosition}px`;
-
-          currPosition > endPosition && (clearInterval(resume), catWalk());
-        }, 50);
-      }, 5000);
-    }
+            currPosition > endPosition && (clearInterval(resume), catWalk());
+          }, 50);
+        }, 5000));
 
     imgElem.style.left = `${currPosition}px`;
   }, 50);
