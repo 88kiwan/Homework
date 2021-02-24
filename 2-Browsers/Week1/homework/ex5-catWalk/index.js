@@ -19,13 +19,32 @@ const imgElem = document.querySelector('img');
 imgElem.style.left = '0px';
 
 function catWalk() {
-  let position = 10;
-  // TODO: No.6
-  const walk = setInterval(() => {
-    if (position < window.innerWidth) {
+  let position = 0;
+
+  // TODO: refactoring
+  const start = setInterval(() => {
+    if (position < window.innerWidth / 2) {
       position += 10;
     } else {
-      position = 0;
+      clearInterval(start);
+      imgElem.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
+
+      setTimeout(() => {
+        const resume = setInterval(() => {
+          position += 10;
+          imgElem.style.left = `${position}px`;
+
+          if (position > window.innerWidth) {
+            clearInterval(resume);
+            position = 0;
+            imgElem.style.left = `${position}px`;
+            catWalk();
+          }
+        }, 50);
+
+        imgElem.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      }, 5000);
     }
 
     imgElem.style.left = `${position}px`;
