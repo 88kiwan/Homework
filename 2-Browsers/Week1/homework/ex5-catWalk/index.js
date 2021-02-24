@@ -15,8 +15,21 @@
    for 5 seconds, and then replace the img with the original image and have it 
    continue the walk.
 -----------------------------------------------------------------------------*/
+const imgElem = document.querySelector('img');
+imgElem.style.left = '0px';
+
 function catWalk() {
-  // TODO complete this function
+  let position = 10;
+  // TODO: No.6
+  const walk = setInterval(() => {
+    if (position < window.innerWidth) {
+      position += 10;
+    } else {
+      position = 0;
+    }
+
+    imgElem.style.left = `${position}px`;
+  }, 50);
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('DOMContentLoaded', catWalk());
