@@ -30,7 +30,6 @@ function draw(cell, context) {
 
   do {
     counter++;
-    console.log(counter);
   } while (createCell().lifeTime === 1);
 
   let opacity = 0;
