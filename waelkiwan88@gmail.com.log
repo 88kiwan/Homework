@@ -94,3 +94,8 @@ ex3-hijackLogo.js:9:54 - Unknown word (Xdpd)
 2021-02-24 11:38:05 info: ---------------------------------------
 2021-02-24 11:38:08 info: All unit tests passed.
 2021-02-24 11:38:09 info: All steps were completed successfully
+2021-02-25 11:46:50 info: ----------------------------------------
+2021-02-25 11:46:50 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-02-25 11:46:50 info: ----------------------------------------
+2021-02-25 11:46:54 info: All unit tests passed.
+2021-02-25 11:46:55 info: All steps were completed successfully
