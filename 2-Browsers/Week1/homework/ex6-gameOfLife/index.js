@@ -13,6 +13,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -25,8 +26,31 @@ function draw(cell, context) {
     CELL_SIZE
   );
 
+  let counter = 0;
+
+  do {
+    counter++;
+    console.log(counter);
+  } while (createCell().lifeTime === 1);
+
+  let opacity = 0;
+  switch (counter) {
+    case 1:
+      opacity = 0.25;
+      break;
+    case 2:
+      opacity = 0.5;
+      break;
+    case 3:
+      opacity = 0.75;
+      break;
+    case 4:
+      opacity = 1;
+      break;
+  }
+
   if (cell.alive) {
-    context.fillStyle = `rgb(24, 215, 236)`;
+    context.fillStyle = `rgba(24, 215, 236, ${opacity}`;
     context.beginPath();
     context.arc(
       cell.x * CELL_SIZE + CELL_RADIUS,

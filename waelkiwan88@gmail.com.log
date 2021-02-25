@@ -99,3 +99,8 @@ ex3-hijackLogo.js:9:54 - Unknown word (Xdpd)
 2021-02-25 11:46:50 info: ----------------------------------------
 2021-02-25 11:46:54 info: All unit tests passed.
 2021-02-25 11:46:55 info: All steps were completed successfully
+2021-02-25 03:02:14 info: ------------------------------------------
+2021-02-25 03:02:14 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2021-02-25 03:02:14 info: ------------------------------------------
+2021-02-25 03:02:14 warn: A unit test file was not provided.
+2021-02-25 03:02:15 info: All steps were completed successfully
