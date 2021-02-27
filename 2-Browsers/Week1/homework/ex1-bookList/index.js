@@ -45,19 +45,15 @@ function createBookList(books) {
     imgElem.setAttribute('alt', `${book.title} - Book`);
     imgElem.style.height = '275px';
 
-    if (book.author === 'Don Norman') {
-      imgElem.src = './assets/the_design_of_everyday_things.jpg';
-    } else if (book.author === 'Brian Christian') {
-      imgElem.src = './assets/the_most_human_human.jpg';
-    } else {
-      imgElem.src = './assets/the_pragmatic_programmer.jpg';
-    }
+    book.author === 'Don Norman' &&
+      (imgElem.src = './assets/the_design_of_everyday_things.jpg');
+    book.author === 'Brian Christian'
+      ? (imgElem.src = './assets/the_most_human_human.jpg')
+      : (imgElem.src = './assets/the_pragmatic_programmer.jpg');
 
-    if (!book.alreadyRead) {
-      liElem.style.backgroundColor = 'red';
-    } else {
-      liElem.style.backgroundColor = 'green';
-    }
+    !book.alreadyRead
+      ? (liElem.style.backgroundColor = 'red')
+      : (liElem.style.backgroundColor = 'green');
 
     ulElem.append(liElem);
 
