@@ -6,8 +6,10 @@
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  document.body.innerHTML = new Date().toLocaleTimeString();
-  setInterval(() => addCurrentTime(), 1000);
+  setInterval(
+    () => (document.body.innerHTML = new Date().toLocaleTimeString()),
+    1000
+  );
 }
 
 window.onload = addCurrentTime();
