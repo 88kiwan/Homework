@@ -16,39 +16,30 @@
    continue the walk.
 -----------------------------------------------------------------------------*/
 
+let currPosition = 0;
+
 function catWalk() {
   const imgElem = document.querySelector('img');
-  let currPosition = -200;
-  let endPosition = window.innerWidth;
-  let pausePosition = endPosition / 2 - currPosition;
+  const endPosition = window.innerWidth;
+  const pausePosition = (endPosition - 300) / 2;
   const origSrc = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
   const newSrc =
     'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
 
-  const start = setInterval(
-    () => (
-      (endPosition = window.innerWidth),
-      (pausePosition = endPosition / 2 - currPosition),
-      currPosition < pausePosition
-        ? (currPosition += 10)
-        : ((imgElem.src = newSrc),
-          clearInterval(start),
-          setTimeout(() => {
-            endPosition = window.innerWidth;
-            pausePosition = endPosition / 2 - currPosition;
-            imgElem.src = origSrc;
-            imgElem.alt = 'Cat dancing';
-
-            const resume = setInterval(() => {
-              currPosition += 10;
-              imgElem.style.left = `${currPosition}px`;
-              currPosition > endPosition && (clearInterval(resume), catWalk());
-            }, 50);
-          }, 5000)),
-      (imgElem.style.left = `${currPosition}px`)
-    ),
-    50
-  );
+  const walk = setInterval(() => {
+    currPosition !== pausePosition
+      ? (currPosition += 10)
+      : ((imgElem.src = newSrc),
+        clearInterval(walk),
+        setTimeout(() => {
+          imgElem.src = origSrc;
+          imgElem.alt = 'Cat dancing';
+          currPosition += 10;
+          catWalk();
+        }, 5000)),
+      currPosition > endPosition && (currPosition = 0),
+      (imgElem.style.left = `${currPosition}px`);
+  }, 50);
 }
 
 window.addEventListener('DOMContentLoaded', catWalk());
