@@ -1,5 +1,5 @@
 {
-  "node": "v15.8.0",
+  "node": "v15.10.0",
   "system": {
     "manufacturer": "Apple Inc.",
     "model": "MacBookPro17,1"
@@ -13,7 +13,7 @@
   "osInfo": {
     "platform": "darwin",
     "distro": "macOS",
-    "release": "11.2.1"
+    "release": "11.2.2"
   },
   "blockDevices": [
     {
@@ -165,6 +165,7 @@
       "streetsidesoftware.code-spell-checker",
       "VisualStudioExptTeam.vscodeintellicode",
       "vscodevim.vim",
+      "vsls-contrib.codetour",
       "WallabyJs.quokka-vscode",
       "wayou.vscode-todo-highlight",
       "Zignd.html-css-class-completion"
@@ -237,7 +238,6 @@
         "workbench.action.toggleStatusbarVisibility",
         "workbench.action.toggleActivityBarVisibility"
       ],
-      "liveServer.settings.NoBrowser": true,
       "liveServer.settings.donotShowInfoMsg": true,
       "explorer.confirmDelete": false,
       "explorer.decorations.badges": false,
@@ -350,7 +350,8 @@
         }
       ],
       "editor.minimap.enabled": false,
-      "workbench.statusBar.visible": false
+      "workbench.statusBar.visible": false,
+      "workbench.activityBar.visible": false
     }
   }
 }
