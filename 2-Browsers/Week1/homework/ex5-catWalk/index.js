@@ -33,7 +33,6 @@ function catWalk() {
         clearInterval(walk),
         setTimeout(() => {
           imgElem.src = origSrc;
-          imgElem.alt = 'Cat dancing';
           currPosition += 10;
           catWalk();
         }, 5000)),
