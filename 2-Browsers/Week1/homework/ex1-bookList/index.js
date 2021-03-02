@@ -39,21 +39,27 @@ function createBookList(books) {
                         min-width:350px`;
 
     const pElem = document.createElement('p');
-    pElem.innerHTML = `${book.title} - ${book.author}`;
+    pElem.innerText = `${book.title} - ${book.author}`;
 
     const imgElem = document.createElement('img');
     imgElem.setAttribute('alt', `${book.title} - Book`);
     imgElem.style.height = '275px';
 
-    book.author === 'Don Norman' &&
-      (imgElem.src = './assets/the_design_of_everyday_things.jpg');
-    book.author === 'Brian Christian'
-      ? (imgElem.src = './assets/the_most_human_human.jpg')
-      : (imgElem.src = './assets/the_pragmatic_programmer.jpg');
+    switch (book.title.toLowerCase()) {
+      case 'the design of everyday things':
+        imgElem.src = './assets/the_design_of_everyday_things.jpg';
+        break;
+      case 'the most human human':
+        imgElem.src = './assets/the_most_human_human.jpg';
+        break;
+      case 'the pragmatic programmer':
+        imgElem.src = './assets/the_most_human_human.jpg';
+        './assets/the_pragmatic_programmer.jpg';
+    }
 
-    !book.alreadyRead
-      ? (liElem.style.backgroundColor = 'red')
-      : (liElem.style.backgroundColor = 'green');
+    book.alreadyRead
+      ? (liElem.style.backgroundColor = 'green')
+      : (liElem.style.backgroundColor = 'red');
 
     ulElem.append(liElem);
 
