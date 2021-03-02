@@ -21,23 +21,28 @@ let currPosition = 0;
 function catWalk() {
   const imgElem = document.querySelector('img');
   const endPosition = window.innerWidth;
-  const pausePosition = (endPosition - 300) / 2;
+  const pausePosition = endPosition / 2 - 250;
   const origSrc = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
   const newSrc =
     'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424';
 
   const walk = setInterval(() => {
-    currPosition !== pausePosition
-      ? (currPosition += 10)
-      : ((imgElem.src = newSrc),
-        clearInterval(walk),
-        setTimeout(() => {
-          imgElem.src = origSrc;
-          currPosition += 10;
-          catWalk();
-        }, 5000)),
-      currPosition > endPosition && (currPosition = 0),
-      (imgElem.style.left = `${currPosition}px`);
+    currPosition += 10;
+
+    if (
+      currPosition >= pausePosition - 5 &&
+      currPosition <= pausePosition + 5
+    ) {
+      imgElem.src = newSrc;
+      clearInterval(walk);
+      setTimeout(() => {
+        imgElem.src = origSrc;
+        catWalk();
+      }, 5000);
+    } else if (currPosition > endPosition) {
+      currPosition = 0;
+    }
+    imgElem.style.left = `${currPosition}px`;
   }, 50);
 }
 
