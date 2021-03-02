@@ -28,3 +28,8 @@
 2021-03-02 07:01:19 info: Exercise has not yet been modified
 2021-03-02 07:01:19 warn: A unit test file was not provided.
 2021-03-02 07:01:20 info: All steps were completed successfully
+2021-03-02 07:39:40 info: ---------------------------------------
+2021-03-02 07:39:40 info: >>> Running Unit Test `ex5-catWalk` <<<
+2021-03-02 07:39:40 info: ---------------------------------------
+2021-03-02 07:39:43 info: All unit tests passed.
+2021-03-02 07:39:44 info: All steps were completed successfully
