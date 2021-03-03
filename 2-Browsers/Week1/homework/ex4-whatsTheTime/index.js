@@ -7,7 +7,7 @@
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   setInterval(
-    () => (document.body.innerHTML = new Date().toLocaleTimeString()),
+    () => (document.body.innerText = new Date().toLocaleTimeString()),
     1000
   );
 }
